@@ -103,11 +103,8 @@ function getTransformedUrls(publicId) {
     
 })();
 
-app.use(
-    cors({
-        origin: '*',
-    })
-);
+app.use(cors());
+
 app.use(express.json());
 
 app.use(bodyParser.urlencoded({ extended: true }));
